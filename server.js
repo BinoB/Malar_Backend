@@ -32,6 +32,9 @@ app.use('/api/v1/',payment);
         res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
     })
 } */
+app.get("/", (req, res) => {
+    res.send("Home Page");
+  });
 
 app.use(errorMiddleware)
 
